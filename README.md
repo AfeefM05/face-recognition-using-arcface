@@ -2,7 +2,7 @@
 This project implements real-time face recognition using SCRFD 2.5G for face detection and ArcFace ResNet 100 for face feature extraction and recognition. The project also leverages CuPy for GPU-accelerated computing and threading for improved performance.
 
 # Folder Structure
-'''
+```
 ├── dataset
 │   └── new_persons
 │       └── <person1_name>
@@ -11,7 +11,7 @@ This project implements real-time face recognition using SCRFD 2.5G for face det
 │   └── data
 │   └── backup
     └── facial_features.npz
-'''
+```
 
 # Usage
 - # Adding a New Person
