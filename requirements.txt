@@ -1,0 +1,7 @@
+argparse==1.4.0
+opencv-python==4.5.5.64
+cupy-cuda11x==10.1.0  # Use the appropriate version of CuPy based on your CUDA version
+numpy==1.24.2
+torch==1.13.1  # Use the appropriate PyTorch version for your system (CUDA support, etc.)
+torchvision==0.14.0  # Match this with your PyTorch version
+scikit-image==0.21.0
