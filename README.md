@@ -11,6 +11,7 @@ This project implements real-time face recognition using SCRFD 2.5G for face det
 │   └── data
 │   └── backup
     └── facial_features.npz
+'''
 
 # Usage
 - # Adding a New Person
