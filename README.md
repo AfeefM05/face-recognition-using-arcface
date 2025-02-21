@@ -44,3 +44,7 @@ Run the recognize.py script to:
 - Real-time Recognition: With threading and GPU acceleration via CuPy, the system runs efficiently for real-time face recognition, ensuring smooth and fast performance.
 
 - Data Storage: The extracted features for each individual are stored in .npz files inside the dataset/ directory. These feature vectors are then used for recognition in recognize.py.
+
+# Note
+- I took inspiration from this repo - https://github.com/vectornguyen76/face-recognition/tree/master
+- I optimised the code for better usage.
