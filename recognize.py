@@ -169,14 +169,14 @@ class FaceRecognitionSystem:
 
 if __name__ == "__main__":
     face_recognition = FaceRecognitionSystem(
-        arcface_model_path=r"D:\face_recognition\new\face_rec\arcface\weights\arcface_r100.pth",
-        feature_path=r"D:\face_recognition\new\datasets\face_features",
-        scrfd_model_path=r"D:\face_recognition\new\face_det\scrfd\weights\scrfd_2.5g_bnkps.onnx"
+        arcface_model_path=r"face_rec\arcface\weights\arcface_r100.pth",
+        feature_path=r"datasets\face_features",
+        scrfd_model_path=r"face_det\scrfd\weights\scrfd_2.5g_bnkps.onnx"
     )
 
     face_recognition.start()
 
-    cap = cv2.VideoCapture("http://192.168.137.65:4747/video")
+    cap = cv2.VideoCapture(0)
     while cap.isOpened():
         ret, frame = cap.read()
         if not ret:
