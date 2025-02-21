@@ -16,10 +16,10 @@ from face_rec.arcface.utils import read_features
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 # Initialize detector and recognizer
-detector = SCRFD(model_file=r"D:\face_recognition\new\face_det\scrfd\weights\scrfd_2.5g_bnkps.onnx")
+detector = SCRFD(model_file=r"face_det\scrfd\weights\scrfd_2.5g_bnkps.onnx")
 recognizer = iresnet_inference(
     model_name="r100",
-    path=r"D:\face_recognition\new\face_rec\arcface\weights\arcface_r100.pth",
+    path=r"face_rec\arcface\weights\arcface_r100.pth",
     device=device
 )
 
@@ -106,25 +106,25 @@ if __name__ == "__main__":
     parser.add_argument(
         "--backup-dir",
         type=str,
-        default=r"D:\face_recognition\new\datasets\backup",
+        default=r"datasets\backup",
         help="Directory to save person data.",
     )
     parser.add_argument(
         "--add-persons-dir",
         type=str,
-        default=r"D:\face_recognition\new\datasets\new_person",
+        default=r"datasets\new_person",
         help="Directory to add new persons.",
     )
     parser.add_argument(
         "--faces-save-dir",
         type=str,
-        default=r"D:\face_recognition\new\datasets\data",
+        default=r"datasets\data",
         help="Directory to save faces.",
     )
     parser.add_argument(
         "--features-path",
         type=str,
-        default=r"D:\face_recognition\new\datasets\face_features",
+        default=r"datasets\face_features",
         help="Path to save face features.",
     )
     opt = parser.parse_args()
