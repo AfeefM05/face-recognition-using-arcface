@@ -17,17 +17,17 @@ Ensure the dataset folder contains the feature files for the known individuals.
 
 Run the recognize.py script to:
 
--Capture video frames from your webcam (or any video source).
--Detect faces in real-time using SCRFD.
--Extract facial features using ArcFace ResNet 100.
--Compare the extracted features with the stored features from the dataset to recognize individuals.
--The recognized faces will be displayed with labels corresponding to the person's name.
+- Capture video frames from your webcam (or any video source).
+- Detect faces in real-time using SCRFD.
+- Extract facial features using ArcFace ResNet 100.
+- Compare the extracted features with the stored features from the dataset to recognize individuals.
+- The recognized faces will be displayed with labels corresponding to the person's name.
 
 # How It Works
--Face Detection (SCRFD 2.5G): The SCRFD (Single-stage Face Re-Detection) algorithm is used for detecting faces in images or video streams. It is fast and highly accurate.
+- Face Detection (SCRFD 2.5G): The SCRFD (Single-stage Face Re-Detection) algorithm is used for detecting faces in images or video streams. It is fast and highly accurate.
 
--Face Feature Extraction (ArcFace ResNet 100): ArcFace is used to extract deep learning-based facial features that are robust to pose, expression, and lighting variations. The ResNet 100 model is used to encode the face into a high-dimensional feature vector.
+- Face Feature Extraction (ArcFace ResNet 100): ArcFace is used to extract deep learning-based facial features that are robust to pose, expression, and lighting variations. The ResNet 100 model is used to encode the face into a high-dimensional feature vector.
 
--Real-time Recognition: With threading and GPU acceleration via CuPy, the system runs efficiently for real-time face recognition, ensuring smooth and fast performance.
+- Real-time Recognition: With threading and GPU acceleration via CuPy, the system runs efficiently for real-time face recognition, ensuring smooth and fast performance.
 
--Data Storage: The extracted features for each individual are stored in .npz files inside the dataset/ directory. These feature vectors are then used for recognition in recognize.py.
+- Data Storage: The extracted features for each individual are stored in .npz files inside the dataset/ directory. These feature vectors are then used for recognition in recognize.py.
